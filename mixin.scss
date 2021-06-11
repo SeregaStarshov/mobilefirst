@@ -1,0 +1,24 @@
+@mixin btn {
+    background-color: $bg-yellow;
+    padding: 12px 42px;
+    border-radius: 23px;
+    border: none;
+    cursor: pointer;
+    span {
+        color: #292929;
+        line-height: 20px;
+    }
+}
+
+@mixin list {
+    list-style-type: none;
+    padding: 9px 0px;
+    &__item {
+        font-weight: normal;
+        line-height: 20px;
+        &::before {
+            content: url('../images/mark.svg');
+             margin-right: 20px;
+        }
+    }
+}
